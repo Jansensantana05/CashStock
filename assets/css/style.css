@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+    margin: 0;
+    background-color: #f3f3f3;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+header {
+    height: 5.46vh;
+    background-color: #fff;
+}
+
+nav {
+    height: 94.54vh;
+
+    background-color: #fff;
+}
+
+main {
+    height: 94.54vh;
+}
+
+.head-left{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo {
+    height: 1.71em;
+    margin-left: 16px;
+}
+
+.logo .img{
+    height: 100%;
+}
+
+.p-central{
+    margin: 0;
+    margin-left: 16px;
+    font-weight: 600;
+}
+
+.head-right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menu {
+    height: 1.714em;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.menu .img{
+    height: 100%;
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.nav-block{
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.nav-block a {
+    color: #666666;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 400;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-left: 16px;
+}
+
+.nav-block a:hover {
+    color: #E21826;
+    text-decoration: underline;
+}
+
+.nav-header{
+    display: flex;
+    align-items: center;
+}
+
+.nav-header img{
+    height: 75%;
+}
+
+.nav-title{
+    color: #E21826;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    margin-left: 6px;
+}
