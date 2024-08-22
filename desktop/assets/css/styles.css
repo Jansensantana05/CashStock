@@ -10,6 +10,7 @@ body {
     flex-direction: column;
 }
 
+/* menu */
 .sidebar {
     width: 100%;
     background-color: #fff;
@@ -17,35 +18,6 @@ body {
     border-bottom: 1px solid #ddd;
     height: auto;
     padding: 20px;
-}
-
-.logo {
-    height: 3em;
-    margin-left: 16px;
-}
-
-.logo .img {
-    height: 100%;
-}
-
-header.col-12.row.gx-0 {
-    background-color: #fff;
-}
-
-.header {
-    background-color: #fff;
-}
-
-.header-logo {
-    height: auto;
-    padding: 10px 0;
-}
-
-.head-left {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
 }
 
 .menu ul {
@@ -87,6 +59,36 @@ header.col-12.row.gx-0 {
     padding-right: 10px;
 }
 
+/* cabeçalho */
+.logo {
+    height: 3em;
+    margin-left: 16px;
+}
+
+.logo .img {
+    height: 100%;
+}
+
+header.col-12.row.gx-0 {
+    background-color: #fff;
+}
+
+.header {
+    background-color: #fff;
+}
+
+.header-logo {
+    height: auto;
+    padding: 10px 0;
+}
+
+.head-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .main-content {
     flex-grow: 1;
     padding: 20px;
@@ -108,6 +110,22 @@ header h2 {
     color: #333;
 }
 
+.head-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+.head-right a {
+    margin-left: 15px;
+}
+
+.head-right img {
+    width: 40px;
+    height: 40px;
+}
+/* barra de pesquisa */
 .search-bar {
     width: 100%;
     display: flex;
@@ -122,6 +140,8 @@ header h2 {
     margin: 10px;
 }
 
+
+/* conteúdo */
 .order-list table {
     width: 100%;
     border-collapse: collapse;
@@ -176,7 +196,6 @@ header h2 {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    /* Espaçamento opcional acima do botão */
 }
 
 .scroll-button {
@@ -208,21 +227,6 @@ header h2 {
     width: 100%;
 }
 
-.head-right {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 100%;
-}
-
-.head-right a {
-    margin-left: 15px;
-}
-
-.head-right img {
-    width: 40px;
-    height: 40px;
-}
 
 @media (min-width: 768px) {
     .container {
