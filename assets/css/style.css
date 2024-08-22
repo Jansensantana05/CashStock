@@ -9,18 +9,18 @@ body {
 }
 
 header {
-    height: 5.46vh;
+    min-height: 5.46vh;
     background-color: #fff;
 }
 
 nav {
-    height: 94.54vh;
-
+    max-height: 100%;
     background-color: #fff;
 }
 
 main {
-    height: 94.54vh;
+    min-height: 94.54vh;
+    overflow: visible
 }
 
 .head-left{
@@ -62,8 +62,8 @@ main {
 
 .nav{
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .nav-block{
@@ -75,7 +75,29 @@ main {
     margin-bottom: 18px;
 }
 
-.nav-block a {
+.nav .dropdown{
+    border: none;
+    color: transparent;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.nav .dropdown:hover{
+    background-color: #f3f3f3;
+    border-radius: 5px;
+}
+
+.nav-content{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.dropdown:hover .nav-content{
+    display: flex;
+}
+
+.nav-content a {
     color: #666666;
     font-size: 14px;
     text-decoration: none;
@@ -85,7 +107,7 @@ main {
     margin-left: 16px;
 }
 
-.nav-block a:hover {
+.nav-content a:hover {
     color: #E21826;
     text-decoration: underline;
 }
@@ -105,4 +127,37 @@ main {
     font-weight: 600;
     margin: 0;
     margin-left: 6px;
+}
+
+@media (min-width: 768px) {
+    
+    .nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    nav {
+        min-height: 94.54vh;
+        max-height: 100%;
+        background-color: #fff;
+    }
+
+    .nav-content{
+    display: flex;
+    }
+
+    main {
+        overflow: auto;
+        max-height: 94.54vh;
+    }
+
+}
+
+@media (max-width: 860px) {
+    
+    .nav-content a {
+        font-size: 13px;
+    }
+
 }
