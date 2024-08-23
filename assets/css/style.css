@@ -102,15 +102,14 @@ main {
     font-size: 14px;
     text-decoration: none;
     font-weight: 400;
-    padding: 15px;
-    border-radius: 5px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-left: 16px;
 }
 
-.nav-content a.active,
 .nav-content a:hover {
-    background-color: #f8f8f8;
-    color: #e21826;
-    font-weight: bold;
+    color: #E21826;
+    text-decoration: underline;
 }
 
 .nav-header{

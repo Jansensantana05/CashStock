@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CashStock</title>
 
-    <link rel="stylesheet" href="assets/css/bootstrap-grid.css">
-    <link rel="stylesheet" href="assets/css/bootstrap-grid.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="/CashStock/assets/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="/CashStock/assets/css/style.css">
+    <link rel="stylesheet" href="/CashStock/assets/css/style_pedidos_cancelados.css">
 </head>
 
 <body>
@@ -22,42 +22,42 @@
                 <!--Cabeçalho Esquerdo-->
                 <div class="col-8 head-left">
                     <a href="" class="logo">
-                        <img class="img" src="assets/imgs/logo-ifood-1024 1.svg" alt="Logo">
+                        <img class="img" src="/CashStock/assets/imgs/logo-ifood-1024 1.svg" alt="Logo"> 
                     </a>
-
+                    
                     <p class="p-central">Central de Controle</p>
                 </div>
 
                 <!--Cabeçalho Direito-->
                 <div class="col-4 head-right">
-
+                    
                     <a href="" class="menu">
-                        <img class="img" src="assets/imgs/Calendar.svg" alt="">
+                        <img class="img" src="/CashStock/assets/imgs/Calendar.svg" alt="">
                     </a>
 
                     <a href="" class="menu">
-                        <img class="img" src="assets/imgs/Notification (2).svg" alt="">
+                        <img class="img" src="/CashStock/assets/imgs/Notification (2).svg" alt="">
                     </a>
 
                     <a href="" class="menu">
-                        <img class="img" src="assets/imgs/Ellipse 2.svg" alt="">
+                        <img class="img" src="/CashStock/assets/imgs/Ellipse 2.svg" alt="">
                     </a>
 
                 </div>
             </header>
 
         </div>
-
+        
         <!--Linha 2-->
         <div class="row gx-0">
             <!--Barra Lateral-->
             <nav class="col-12 col-md-2 nav">
-
+                
                 <!--Produto-->
                 <div class="nav-block">
                     <button class="dropdown">
                         <div class="nav-header">
-                            <img src="assets/imgs/icon_tag_price_discount.svg" alt="">
+                            <img src="/cashStock/assets/imgs/icon_tag_price_discount.svg" alt="">
                             <h3 class="nav-title">Produto</h3>
                         </div>
                     </button>
@@ -74,7 +74,7 @@
                 <div class="nav-block">
                     <button class="dropdown">
                         <div class="nav-header">
-                            <img src="assets/imgs/icon_archive.svg" alt="">
+                            <img src="/cashStock/assets/imgs/icon_archive.svg" alt="">
                             <h3 class="nav-title">Pedido</h3>
                         </div>
                     </button>
@@ -91,7 +91,7 @@
                 <div class="nav-block">
                     <button class="dropdown">
                         <div class="nav-header">
-                            <img src="assets/imgs/icon_wallet.svg" alt="">
+                            <img src="/cashStock/assets/imgs/icon_wallet.svg" alt="">
                             <h3 class="nav-title">Finanças</h3>
                         </div>
                     </button>
@@ -104,13 +104,15 @@
                         <a href="#">Despesas Estimadas</a>
                         <a href="#">Relatório Financeiro</a>
                     </div>
-
+                    
                 </div>
             </nav>
-
+            
             <!--Conteudo Principal-->
-            <main class="content col-12 col-md-10">
-                <h2>Pedidos Cancelados</h2>
+            <main class="col-12 col-md-10">
+                <header>
+                    <h2>Pedidos Cancelados</h2>
+                </header>
                 <section class="order-list">
                     <table>
                         <thead>
@@ -126,8 +128,8 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td data-label="Produto"><img src="assets/imgs/cheeseburguer.png" alt="Cheese Burguer">
-                                    Cheese Burguer</td>
+                                <td data-label="Produto"><img src="/CashStock/assets/imgs/cheeseburguer.png"
+                                        alt="Cheese Burguer"> Cheese Burguer</td>
                                 <td data-label="Status">
                                     <strong>Cancelado</strong>
                                     <span>Cancelado automaticamente pelo sistema</span>
@@ -135,7 +137,7 @@
                                 <td data-label="Total do Pedido">R$27,00</td>
                             </tr>
                             <tr>
-                                <td data-label="Produto"><img src="assets/imgs/batatafrita.png" alt="Batata Frita">
+                                <td data-label="Produto"><img src="/CashStock/assets/imgs/batatafrita.png" alt="Batata Frita">
                                     Batata Frita</td>
                                 <td data-label="Status">
                                     <strong>Cancelado</strong>
@@ -144,7 +146,7 @@
                                 <td data-label="Total do Pedido">R$17,90</td>
                             </tr>
                             <tr>
-                                <td data-label="Produto"><img src="assets/imgs/combodacasa.png" alt="Combo da Casa">
+                                <td data-label="Produto"><img src="/CashStock/assets/imgs/combodacasa.png" alt="Combo da Casa">
                                     Combo da Casa</td>
                                 <td data-label="Status">
                                     <strong>Cancelado</strong>
@@ -153,9 +155,8 @@
                                 <td data-label="Total do Pedido">R$49,90</td>
                             </tr>
                             <tr>
-                                <td data-label="Produto"><img src="assets/imgs/burguerbacon.png"
-                                        alt="Buguer Bacon com Cheddar">
-                                    Burguer
+                                <td data-label="Produto"><img src="/CashStock/assets/imgs/burguerbacon.png"
+                                        alt="Buguer Bacon com Cheddar"> Burguer
                                     Bacon com Cheddar</td>
                                 <td data-label="Status">
                                     <strong>Cancelado</strong>
@@ -164,7 +165,7 @@
                                 <td data-label="Total do Pedido">R$35,00</td>
                             </tr>
                             <tr>
-                                <td data-label="Produto"><img src="assets/imgs/hotdog.png" alt="Hot Dog com Cheddar">
+                                <td data-label="Produto"><img src="/CashStock/assets/imgs/hotdog.png" alt="Hot Dog com Cheddar">
                                     Hot Dog com Cheddar
                                 </td data-label="Status">
                                 <td>
@@ -174,7 +175,7 @@
                                 <td data-label="Total do Pedido">R$29,90</td>
                             </tr>
                             <tr>
-                                <td data-label="Produto"><img src="assets/imgs/onionsring.png" alt="Onions Rings">
+                                <td data-label="Produto"><img src="/CashStock/assets/imgs/onionsring.png" alt="Onions Rings">
                                     Onions Rings</td>
                                 <td data-label="Status">
                                     <strong>Cancelado</strong>
@@ -193,7 +194,7 @@
             </main>
         </div>
     </div>
-    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="/cashStock/assets/js/bootstrap.bundle.js"></script>
 </body>
 
 </html>
