@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CashStock</title>
 
+    <link rel="stylesheet" href="CASHSTOK/assets/css/bootstrap-grid.css">
     <link rel="stylesheet" href="assets/css/bootstrap-grid.css">
-    <link rel="stylesheet" href="assets/css/bootstrap-grid.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles_reembolso.css">
 </head>
 
 <body>
@@ -82,7 +82,7 @@
                     <div class="nav-content">
                         <a href="#">Meus Pedidos</a>
                         <a href="#">Cancelado</a>
-                        <a href="#">Reembolso</a>
+                        <a class="active" href="#">Reembolso</a>
                     </div>
 
                 </div>
@@ -110,7 +110,8 @@
 
             <!--Conteudo Principal-->
             <main class="content col-12 col-md-10">
-                <h2>Pedidos Cancelados</h2>
+
+                <h2>Reembolso</h2>
                 <section class="order-list">
                     <table>
                         <thead>
@@ -121,6 +122,7 @@
                                 </div>
                                 <th>Produto</th>
                                 <th>Status</th>
+                                <th>Motivo</th>
                                 <th>Total do Pedido</th>
                             </tr>
                         </thead>
@@ -129,27 +131,29 @@
                                 <td data-label="Produto"><img src="assets/imgs/cheeseburguer.png" alt="Cheese Burguer">
                                     Cheese Burguer</td>
                                 <td data-label="Status">
-                                    <strong>Cancelado</strong>
-                                    <span>Cancelado automaticamente pelo sistema</span>
+                                    <strong>Solicitação Concluída</strong>
                                 </td>
+                                <td data-label="Motivo">Recebi o pedido com itens faltando</td>
                                 <td data-label="Total do Pedido">R$27,00</td>
                             </tr>
                             <tr>
                                 <td data-label="Produto"><img src="assets/imgs/batatafrita.png" alt="Batata Frita">
                                     Batata Frita</td>
                                 <td data-label="Status">
-                                    <strong>Cancelado</strong>
-                                    <span>Cancelado pelo comprador</span>
+                                    <strong>Solicitação Cancelada</strong>
+                                    <span>Cancelada pelo comprador</span>
                                 </td>
+                                <td data-label="Motivo">Não recebi o pedido</td>
                                 <td data-label="Total do Pedido">R$17,90</td>
                             </tr>
                             <tr>
                                 <td data-label="Produto"><img src="assets/imgs/combodacasa.png" alt="Combo da Casa">
                                     Combo da Casa</td>
                                 <td data-label="Status">
-                                    <strong>Cancelado</strong>
-                                    <span>Cancelado pelo comprador</span>
+                                    <strong>Solicitação Cancelada</strong>
+                                    <span>Cancelada após análise</span>
                                 </td>
+                                <td data-label="Motivo">Não recebi o pedido</td>
                                 <td data-label="Total do Pedido">R$49,90</td>
                             </tr>
                             <tr>
@@ -158,9 +162,10 @@
                                     Burguer
                                     Bacon com Cheddar</td>
                                 <td data-label="Status">
-                                    <strong>Cancelado</strong>
-                                    <span>Cancelado automaticamente pelo sistema</span>
+                                    <strong>Solicitação Cancelada</strong>
+                                    <span>Cancelada automaticamente pelo sistema</span>
                                 </td>
+                                <td data-label="Motivo">Pagamento não aprovado</td>
                                 <td data-label="Total do Pedido">R$35,00</td>
                             </tr>
                             <tr>
@@ -168,18 +173,19 @@
                                     Hot Dog com Cheddar
                                 </td data-label="Status">
                                 <td>
-                                    <strong>Cancelado</strong>
-                                    <span>Cancelado automaticamente pelo sistema</span>
+                                    <strong>Solicitação Cancelada</strong>
+                                    <span>Cancelada após análise</span>
                                 </td>
+                                <td data-label="Motivo">Não recebi o pedido</td>
                                 <td data-label="Total do Pedido">R$29,90</td>
                             </tr>
                             <tr>
                                 <td data-label="Produto"><img src="assets/imgs/onionsring.png" alt="Onions Rings">
                                     Onions Rings</td>
                                 <td data-label="Status">
-                                    <strong>Cancelado</strong>
-                                    <span>Cancelado pelo comprador</span>
+                                    <strong>Solicitação Concluída</strong>
                                 </td>
+                                <td data-label="Motivo">Recebi o pedido com itens faltando</td>
                                 <td data-label="Total do Pedido">R$19,90</td>
                             </tr>
                         </tbody>
@@ -190,6 +196,8 @@
                         </button>
                     </div>
                 </section>
+
+
             </main>
         </div>
     </div>
