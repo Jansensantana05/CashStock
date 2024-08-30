@@ -1,0 +1,56 @@
+.piechart {
+    display:flex;
+    align-items: flex-end;
+    justify-items: center;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: conic-gradient(#e8c4c7 126deg,#FF9EA5 126deg 162deg, #F44F5B 162deg 234deg, #A20202 234deg 270deg, #E21826 270deg 360deg);   
+    margin-left: 200px;
+
+    }
+
+.legenda {
+    flex-direction: column;
+    color: #666666;
+    font-family: arial;
+    font-size: 15px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-left: 190px;
+    margin-right: 20px;
+   
+    
+
+    }
+.x-box-cont{
+    flex-direction: column;
+    font-size: 12px;
+    
+}
+
+.x-box-cont h4{
+   margin-left: 15px;
+}
+
+
+.x-box-cont strong{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+
+.chartback {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    max-width: 1047px;
+    min-height: 50px;
+    margin-left: 50px;
+    margin-right: 20px;
+    background-color: white;
+    border-radius: 15px;
+}
+/*I don't know how i did it, I just did it, it was hard

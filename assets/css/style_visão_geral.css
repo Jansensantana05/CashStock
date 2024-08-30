@@ -1,0 +1,59 @@
+.caixa {
+    border: 1px solid #b2b2b2; 
+    padding: 2px; 
+    background-color: #ffffff; 
+    width: 200px;
+    max-height: 16px; 
+    text-align: center;
+    border-radius: 2px;
+    font-size: 13px;
+    margin-right: 45px;
+    
+}
+.caixa2 {
+    border: 1px solid #b2b2b2; 
+    padding: 4px; 
+    background-color: #ffffff; 
+    width: 160px;
+    min-height: 34px; 
+    text-align: center; 
+    border-radius: 2px;
+    font-size: 10px;
+    flex-direction: column;
+    margin-right: 45px;
+    text-align: left;
+}
+
+.caixa2 p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.maincontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 10px;
+    padding-bottom: 100px;
+    padding-left: 10px;
+    max-width: 890px;
+    max-height: 390px;
+    margin-right: 20px;
+    background-color: white;
+    border-top-left-radius:0px;
+    border-top-right-radius: 15px;
+    border-end-end-radius: 15px;
+    border-end-start-radius: 15px;
+}
+
+.line {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
