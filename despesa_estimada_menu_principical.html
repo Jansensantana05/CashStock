@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CashStock</title>
+
+    <link rel="stylesheet" href="./assets/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style_despesa_estimada_menu_principical.css">
+    
+    
+</head>
+
+<body>
+    <div class="container-fluid gx-0">
+
+        <!--Linha 1-->
+        <div class="row gx-0">
+
+            <!--Cabeçalho-->
+            <header class="col-12 row gx-0">
+                <!--Cabeçalho Esquerdo-->
+                <div class="col-8 head-left">
+                    <a href="" class="logo">
+                        <img class="img" src="./assets/imgs/logo-ifood-1024 1.svg" alt="Logo"> 
+                    </a>
+                    
+                    <p class="p-central">Central de Controle</p>
+                </div>
+
+                <!--Cabeçalho Direito-->
+                <div class="col-4 head-right">
+                    
+                    <a href="" class="menu">
+                        <img class="img" src="./assets/imgs/Calendar.svg" alt="">
+                    </a>
+
+                    <a href="" class="menu">
+                        <img class="img" src="./assets/imgs/Notification (2).svg" alt="">
+                    </a>
+
+                    <a href="" class="menu">
+                        <img class="img" src="./assets/imgs/Ellipse 2.svg" alt="">
+                    </a>
+
+                </div>
+            </header>
+
+        </div>
+        
+        <!--Linha 2-->
+        <div class="row gx-0">
+            <!--Barra Lateral-->
+            <nav class="col-12 col-md-2 nav">
+                
+                <!--Produto-->
+                <div class="nav-block">
+                    <button class="dropdown">
+                        <div class="nav-header">
+                            <img src="./assets/imgs/icon_tag_price_discount.svg" alt="">
+                            <h3 class="nav-title">Produto</h3>
+                        </div>
+                    </button>
+
+                    <div class="nav-content">
+                        <a href="#">Produtos</a>
+                        <a href="#">Adicionar Produto</a>
+                        <a href="#">Gerir Estoque</a>
+                    </div>
+
+                </div>
+
+                <!--Pedido-->
+                <div class="nav-block">
+                    <button class="dropdown">
+                        <div class="nav-header">
+                            <img src="./assets/imgs/icon_archive.svg" alt="">
+                            <h3 class="nav-title">Pedido</h3>
+                        </div>
+                    </button>
+
+                    <div class="nav-content">
+                        <a href="#">Meus Pedidos</a>
+                        <a href="#">Cancelado</a>
+                        <a href="#">Reembolso</a>
+                    </div>
+
+                </div>
+
+                <!--Finanças-->
+                <div class="nav-block">
+                    <button class="dropdown">
+                        <div class="nav-header">
+                            <img src="./assets/imgs/icon_wallet.svg" alt="">
+                            <h3 class="nav-title">Finanças</h3>
+                        </div>
+                    </button>
+
+                    <div class="nav-content">
+                        <a href="#">Saldo</a>
+                        <a href="#">Enviar Dinheiro</a>
+                        <a href="#">Receber Diheiro</a>
+                        <a href="#">Transações</a>
+                        <a href="#">Despesas Estimadas</a>
+                        <a href="#">Relatório Financeiro</a>
+                    </div>
+                    
+                </div>
+            </nav>
+            
+            <!--Conteudo Principal-->
+            <main class="col-12 col-md-10">
+                <section class="order-list">
+                    <div class="box">
+                        <h4>Despesas Estimadas <br> ⠀
+                            Despesas fixas</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Data de pagamento</th>
+                                <th>Descrição</th>
+                                <th>Forma de pagamento</th>
+                                <th>Quantia</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Dia 10</td>
+                                <td>
+                                    Aluguel
+                                </td>
+                                <td>Transferência bancária</td>
+                                <td>R$2.000,00</td>
+                            </tr>
+                            <tr>
+                                <td>Dia 20</td>
+                                <td>
+                                    Folha de pagamento de funcionários
+                                    
+                                </td>
+                                <td>Débito automático</td>
+                                <td>R$4.326,00</td>
+                            </tr>
+                            <tr>
+                                <td>Dia 20</td>
+                                <td>
+                                    Água
+                                    
+                                </td>
+                                <td>Débito automático</td>
+                                <td>R$500,00</td>
+                            </tr>
+                            <tr>
+                                <td>Dia 10</td>
+                                <td>
+                                    Internet    
+                                </td>
+                                <td>Débito automático</td>
+                                <td>R$150,00</td>
+                            </tr>
+                            <tr>
+                                <td>Dia 1
+                                </td>
+                                <td>
+                                    Energia
+                                    
+                                </td>
+                                <td>Débito automático</td>
+                                <td>R$300,00</td>
+                            </tr>
+                            <tr>
+                                <td>Dia 30</td>
+                                <td>
+                                    Gás
+                               
+                                </td>
+                                <td>Débito automático</td>
+                                <td>R$1000,00</td>
+                            </tr>
+                        
+                        </tbody>
+                    </div>
+                    
+                    </table>
+                    <div class="button-container">
+                        <button class="scroll-button">
+                            <span class="arrow-down">↓</span>
+                        </button>
+                    </div>
+                </section>
+
+            </main>
+        </div>
+    </div>
+    <script src="./assets/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
