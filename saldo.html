@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CashStock</title>
+
+    <link rel="stylesheet" href="./assets/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/saldo.css">
+</head>
+
+<body>
+    <div class="container-fluid gx-0">
+
+        <!--Linha 1-->
+        <div class="row gx-0">
+
+            <!--Cabeçalho-->
+            <header class="col-12 row gx-0">
+                <!--Cabeçalho Esquerdo-->
+                <div class="col-8 head-left">
+                    <a href="" class="logo">
+                        <img class="img" src="./assets/imgs/logo-ifood-1024 1.svg" alt="Logo"> 
+                    </a>
+                    
+                    <p class="p-central">Central de Controle</p>
+                </div>
+
+                <!--Cabeçalho Direito-->
+                <div class="col-4 head-right">
+                    
+                    <a href="" class="menu">
+                        <img class="img" src="./assets/imgs/Calendar.svg" alt="">
+                    </a>
+
+                    <a href="" class="menu">
+                        <img class="img" src="./assets/imgs/Notification (2).svg" alt="">
+                    </a>
+
+                    <a href="" class="menu">
+                        <img class="img" src="./assets/imgs/Ellipse 2.svg" alt="">
+                    </a>
+
+                </div>
+            </header>
+
+        </div>
+        
+        <!--Linha 2-->
+        <div class="row gx-0">
+            <!--Barra Lateral-->
+            <nav class="col-12 col-md-2 nav">
+                
+                <!--Produto-->
+                <div class="nav-block">
+                    <button class="dropdown">
+                        <div class="nav-header">
+                            <img src="./assets/imgs/icon_tag_price_discount.svg" alt="">
+                            <h3 class="nav-title">Produto</h3>
+                        </div>
+                    </button>
+
+                    <div class="nav-content">
+                        <a href="#">Produtos</a>
+                        <a href="#">Adicionar Produto</a>
+                        <a href="#">Gerir Estoque</a>
+                    </div>
+
+                </div>
+
+                <!--Pedido-->
+                <div class="nav-block">
+                    <button class="dropdown">
+                        <div class="nav-header">
+                            <img src="./assets/imgs/icon_archive.svg" alt="">
+                            <h3 class="nav-title">Pedido</h3>
+                        </div>
+                    </button>
+
+                    <div class="nav-content">
+                        <a href="#">Meus Pedidos</a>
+                        <a href="#">Cancelado</a>
+                        <a href="#">Reembolso</a>
+                    </div>
+
+                </div>
+
+                <!--Finanças-->
+                <div class="nav-block">
+                    <button class="dropdown">
+                        <div class="nav-header">
+                            <img src="./assets/imgs/icon_wallet.svg" alt="">
+                            <h3 class="nav-title">Finanças</h3>
+                        </div>
+                    </button>
+
+                    <div class="nav-content">
+                        <a href="#">Saldo</a>
+                        <a href="#">Enviar Dinheiro</a>
+                        <a href="#">Receber Diheiro</a>
+                        <a href="#">Transações</a>
+                        <a href="#">Despesas Estimadas</a>
+                        <a href="#">Relatório Financeiro</a>
+                    </div>
+                    
+                </div>
+            </nav>
+            
+            <!--Conteudo Principal-->
+            <main class="col-12 col-md-10">
+                
+
+
+
+
+               
+                <section class="order-list">
+                    <table>
+                        <thead>
+                            <tr>
+                                <div class="search-bar">
+                                    <input type="text" placeholder="Pesquisar por data">
+                                </div>
+                                <th>Data</th>
+                                <th>Descrição</th>
+                                <th>Status</th>
+                                <th>Fluxo de Dinheiro</th>
+                                <th>Quantia</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-label="Data">01-06-2024</td>
+                                <td data-label="Descrição">Renda do pedido #88446</td>
+                                <td data-label="Status"><strong>Concluído</strong></td>
+                                <td data-label="Fluxo de Dinheiro">Entrada</td>
+                                <td data-label="Quantia">R$100,00</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Data">01-06-2024</td>
+                                <td data-label="Descrição">Renda do pedido #10934</td>
+                                <td data-label="Status"><strong>Concluído</strong></td>
+                                <td data-label="Fluxo de Dinheiro">Entrada</td>
+                                <td data-label="Quantia">R$50,00</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Data">01-06-2024</td>
+                                <td data-label="Descrição">Renda do pedido #87765</td>
+                                <td data-label="Status"><strong>Concluído</strong></td>
+                                <td data-label="Fluxo de Dinheiro">Entrada</td>
+                                <td data-label="Quantia">R$49,90</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Data">01-06-2024</td>
+                                <td data-label="Descrição">Aluguel #10999</td>
+                                <td data-label="Status"><strong>Concluído</strong></td>
+                                <td data-label="Fluxo de Dinheiro">Saída</td>
+                                <td data-label="Quantia">-R$1800</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Data">01-06-2024</td>
+                                <td data-label="Descrição">Renda do pedido #54103</td>
+                                <td data-label="Status"><strong>Concluído</strong></td>
+                                <td data-label="Fluxo de Dinheiro">Entrada</td>
+                                <td data-label="Quantia">R$29,90</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Data">01-06-2024</td>
+                                <td data-label="Descrição">Renda do pedido #85410</td>
+                                <td data-label="Status"><strong>Concluído</strong></td>
+                                <td data-label="Fluxo de Dinheiro">Entrada</td>
+                                <td data-label="Quantia">R$19,90</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="button-container">
+                        <button class="scroll-button">
+                            <span class="arrow-down">↓</span>
+                        </button>
+                    </div>
+                </section>
+
+                
+
+
+
+
+            </main>
+        </div>
+    </div>
+    <script src="./assets/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
