@@ -1,0 +1,102 @@
+.formulario-pesquisa {
+    display: flex;
+    flex-direction: row;
+}
+
+.dados-box{
+    border: #666666 solid 1px;
+    margin: 3px;
+    padding: 2px;
+    padding-top: 1px;
+    border-radius: 5px;
+}
+
+.dados-box label{
+    color: #666666;
+    font-size: 14px;
+}
+
+.dados-box img{
+    width: 10px;
+}
+
+.dados-box input{
+    border: none;
+    width: 145px;
+}
+
+.dados-box button{
+    background-color: transparent;
+    border: none;
+}
+
+.div-letreiro {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    gap: 10px;
+}
+
+.letreiro{
+    border: #666666 solid 1px;
+    border-top: #D00000 solid 1px;
+    display: flex;
+    flex-direction: column;
+}
+
+.letreiro p {
+    font-size: 16px;
+    margin: 4px;
+}
+
+.letreiro-head{
+    display: flex;
+    flex-direction: row;
+}
+
+.letreiro-head p{
+    color: #666666;
+    font-size: 12px;
+}
+
+.div-produto{
+    padding: 15px;
+}
+
+.div-produto p{
+    color: #666666;
+    margin: 2px;
+}
+
+.produtos-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.produtos-row p{
+    color: #666666;
+    font-size: 1.1vw;
+    text-align: center;
+    margin: 2px;
+}
+
+.produtos-row img{
+    width: 15vw;
+    height: 15vmax;
+    border-radius: 10px;
+}
+
+.produtos-row button{
+    width: 8vw;
+    height: 8vmax;
+    border: none;
+    background-color: #e218253b;
+    border-radius: 10px;
+    align-self: center;
+}
+
+.produtos-row button img{
+    width: 5vw;
+    height: 5vmax;
+}
