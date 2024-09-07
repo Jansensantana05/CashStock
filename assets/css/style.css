@@ -99,17 +99,17 @@ main {
 
 .nav-content a {
     color: #666666;
-    font-size: 14px;
+    font-size: 15px;
     text-decoration: none;
     font-weight: 400;
-    margin-top: 6px;
-    margin-bottom: 6px;
-    margin-left: 16px;
+    padding: 15px;
 }
 
 .nav-content a:hover {
     color: #E21826;
-    text-decoration: underline;
+    background-color: #fff6f6;
+    font-weight: bold;
+    height: auto;
 }
 
 .nav-header{
