@@ -1,0 +1,71 @@
+.formulario-pesquisa {
+    display: flex;
+    flex-direction: row;
+}
+
+.dados-box{
+    border: #666666 solid 1px;
+    margin: 3px;
+    padding: 2px;
+    padding-top: 1px;
+    border-radius: 5px;
+}
+
+.dados-box label{
+    color: #666666;
+    font-size: 14px;
+}
+
+.dados-box img{
+    width: 10px;
+}
+
+.dados-box input{
+    border: none;
+    width: 145px;
+}
+
+.dados-box button{
+    background-color: transparent;
+    border: none;
+}
+
+.main-assistente{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.img-assistente{
+    align-self: flex-end;
+}
+
+.img-assistente img{
+    width: 30svw;
+}
+
+.btns{
+    justify-self: center;
+}
+
+.div-btns{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-size: 12px;
+}
+
+.div-btns button{
+    width: 8vw;
+    height: 8vmax;
+    border: none;
+    margin: 50px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    background-color: #e218253b;
+}
+
+.div-btns img{
+    width: 50%;
+}

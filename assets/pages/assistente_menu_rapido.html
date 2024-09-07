@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CashStock</title>
+
+    <link rel="stylesheet" href="/CashStock/assets/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="/CashStock/assets/css/style.css">
+    <link rel="stylesheet" href="/CashStock/assets/css/style_dashboard.css">
+    <link rel="stylesheet" href="/CashStock/assets/css/assistente_menu_rapido.css">
+</head>
+
+<body>
+    <div class="container-fluid gx-0">
+
+        <!--Linha 1-->
+        <div class="row gx-0">
+
+            <!--Cabeçalho-->
+            <header class="col-12 row gx-0">
+                <!--Cabeçalho Esquerdo-->
+                <div class="col-8 head-left">
+                    <a href="" class="logo">
+                        <img class="img" src="/CashStock/assets/imgs/logo-ifood-1024 1.svg" alt="Logo"> 
+                    </a>
+                    
+                    <p class="p-central">Central de Controle</p>
+                </div>
+
+                <!--Cabeçalho Direito-->
+                <div class="col-4 head-right">
+                    
+                    <a href="" class="menu">
+                        <img class="img" src="/CashStock/assets/imgs/Calendar.svg" alt="">
+                    </a>
+
+                    <a href="" class="menu">
+                        <img class="img" src="/CashStock/assets/imgs/Notification (2).svg" alt="">
+                    </a>
+
+                    <a href="" class="menu">
+                        <img class="img" src="/CashStock/assets/imgs/Ellipse 2.svg" alt="">
+                    </a>
+
+                </div>
+            </header>
+
+        </div>
+        
+        <!--Linha 2-->
+        <div class="row gx-0">
+            <!--Barra Lateral-->
+            <nav class="col-12 col-md-2 nav">
+                
+                <!--Produto-->
+                <div class="nav-block">
+                    <button class="dropdown">
+                        <div class="nav-header">
+                            <img src="/CashStock/assets/imgs/icon_tag_price_discount.svg" alt="">
+                            <h3 class="nav-title">Produto</h3>
+                        </div>
+                    </button>
+
+                    <div class="nav-content">
+                        <a href="#">Produtos</a>
+                        <a href="#">Adicionar Produto</a>
+                        <a href="#">Gerir Estoque</a>
+                    </div>
+
+                </div>
+
+                <!--Pedido-->
+                <div class="nav-block">
+                    <button class="dropdown">
+                        <div class="nav-header">
+                            <img src="/CashStock/assets/imgs/icon_archive.svg" alt="">
+                            <h3 class="nav-title">Pedido</h3>
+                        </div>
+                    </button>
+
+                    <div class="nav-content">
+                        <a href="#">Meus Pedidos</a>
+                        <a href="#">Cancelado</a>
+                        <a href="#">Reembolso</a>
+                    </div>
+
+                </div>
+
+                <!--Finanças-->
+                <div class="nav-block">
+                    <button class="dropdown">
+                        <div class="nav-header">
+                            <img src="/CashStock/assets/imgs/icon_wallet.svg" alt="">
+                            <h3 class="nav-title">Finanças</h3>
+                        </div>
+                    </button>
+
+                    <div class="nav-content">
+                        <a href="#">Saldo</a>
+                        <a href="#">Enviar Dinheiro</a>
+                        <a href="#">Receber Diheiro</a>
+                        <a href="#">Transações</a>
+                        <a href="#">Despesas Estimadas</a>
+                        <a href="#">Relatório Financeiro</a>
+                    </div>
+                    
+                </div>
+            </nav>
+            
+            <!--Conteudo Principal-->
+            <main class="col-12 col-md-10">
+                
+
+                <div class="div-dashboard">
+
+                    <div class="menu-dashboard">
+    
+                        <a href="" class="btn-menu">Visão Geral</a>
+                        <a href="" class="btn-menu">Vendas</a>
+                        <a href="" class="btn-menu">Produto</a>
+                        <a href="" class="btn-menu">Despesas</a>
+                        <a href="" class="btn-menu selected">Assistente Financeiro</a>
+
+                    </div>
+                    <div class="dashboard">
+                        
+                        <div>
+                            <form action="" class="formulario-pesquisa">
+                                <div class="dados-box">
+                                    <label for="">Periodo de dados:</label>
+                                    <input type="text" placeholder="">
+                                </div>
+                                <div class="dados-box">
+                                    <button><img src="/CashStock/assets/imgs/icon_search_.svg" alt=""></button>
+                                    <input type="text" placeholder="Pesquisa personalizada">
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="main-assistente">
+                            <div class="btns">
+
+                                <div class="div-btns">
+                                    <div>
+                                        <button>
+                                            <img src="/CashStock/assets/imgs/reserva_emergencia.svg" alt="">
+                                        </button>
+                                        <p>Reserva de Emergência</p>
+                                    </div>
+                                    <div>
+                                        <button>
+                                            <img src="/CashStock/assets/imgs/icon_logo_usd_.svg" alt="">
+                                        </button>
+                                        <p>Precificação</p>
+                                    </div>
+                                </div>
+
+                                <div class="div-btns">
+                                    <div>
+                                        <button>
+                                            <img src="/CashStock/assets/imgs/icon_newspaper_.svg" alt="">
+                                        </button>
+                                        <p>Balanço Financeiro</p>
+                                    </div>
+                                    <div>
+                                        <button>
+                                            <img src="/CashStock/assets/imgs/icon_stats_chart_.svg" alt="">
+                                        </button>
+                                        <p>Taxa de Conversão</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="img-assistente">
+                                <img src="/CashStock/assets/imgs/img_assistennte.svg" alt="">
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </main>
+        </div>
+    </div>
+    <script src="/CashStock/assets/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
