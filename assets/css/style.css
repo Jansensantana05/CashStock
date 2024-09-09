@@ -102,13 +102,13 @@ main {
     font-size: 15px;
     text-decoration: none;
     font-weight: 400;
-    padding: 15px;
+    padding: 8px;
 }
 
 .nav-content a:hover {
     color: #E21826;
     background-color: #fff6f6;
-    font-weight: bold;
+    font-weight: 600;
     height: auto;
 }
 
