@@ -66,3 +66,9 @@ main {
     color: #666666;
     font-size: 12px;
 }
+
+@media (max-width: 564px) {
+    .dashboard{
+        border-top-right-radius: 0px;
+    }
+}

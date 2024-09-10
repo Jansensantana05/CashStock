@@ -10,7 +10,7 @@
 }
 
 .img-assistente img{
-    width: 30svw;
+    width: 30vw;
 }
 
 .btns{
@@ -36,4 +36,23 @@
 
 .div-btns img{
     width: 50%;
+}
+
+@media (max-width : 768px) {
+    .main-assistente{
+        flex-direction: column;
+    }
+
+    .img-assistente{
+        align-self: center;
+    }
+
+    .img-assistente img{
+        width: 70vw;
+    }
+
+    .div-btns button{
+        width: 20vw;
+        height: 20vmax;
+    }
 }
