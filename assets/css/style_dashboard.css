@@ -31,4 +31,38 @@ main {
 
 .dashboard {
     background-color: #fff;
+    border-top-right-radius: 15px;
+    border-end-end-radius: 15px;
+    border-end-start-radius: 15px;
+}
+
+.div-letreiro {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    gap: 10px;
+}
+
+.letreiro{
+    border: #666666 solid 1px;
+    border-top: #D00000 solid 1px;
+    display: flex;
+    flex-direction: column;
+    min-width: 10vw;
+}
+
+.letreiro p {
+    font-size: 16px;
+    margin: 4px;
+    text-align: center;
+}
+
+.letreiro-head{
+    display: flex;
+    flex-direction: row;
+}
+
+.letreiro-head p{
+    color: #666666;
+    font-size: 12px;
 }

@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="/CashStock/assets/css/style.css">
     <link rel="stylesheet" href="/CashStock/assets/css/style_dashboard.css">
     <link rel="stylesheet" href="/CashStock/assets/css/vendas_menu_abas.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
@@ -120,26 +119,36 @@
                         <a href="" class="btn-menu">Despesas</a>
                         <a href="" class="btn-menu">Assistente Financeiro</a>
                     </div>
-                    <div class="maincontent">
+                    <div class="dashboard">
                         <!-- primeira linha-->
-                        <div class="line">
-                            <div class="caixa">
-                                Período dos dados: tempo real
-                            </div>
-                            <div class="search-bar">
-                                <input type="text" placeholder="Pesquisa personalizada">
-                            </div>
+                        <div>
+                            <form action="" class="formulario-pesquisa">
+                                <div class="dados-box">
+                                    <label for="">Periodo de dados:</label>
+                                    <input type="text" placeholder="">
+                                </div>
+                                <div class="dados-box">
+                                    <button><img src="/CashStock/assets/imgs/icon_search_.svg" alt=""></button>
+                                    <input type="text" placeholder="Pesquisa personalizada">
+                                </div>
+                            </form>
                         </div>
 
                         <!-- segunda linha-->
-                        <div class="line">
-                            <div class="caixa2">
-                                Vendas <i class="fa-solid fa-circle-info" style="color: #666666;"></i> <p>R$1661,00</p>
+                        <div class="div-letreiro">
+                            <div class="letreiro">
+                                <div class="letreiro-head">
+                                    <p>Vendas</p>
+                                    <img src="/CashStock/assets/imgs/icon_info_.svg" alt="">
+                                </div>
+                                <p>R$1661,00</p>
                             </div>
-                            <div class="line">
-                                <img src="/CashStock/assets/imgs/linégrafo2.png" alt="Linégrafo"></img>
-                            </div>
+                        </div>    
+
+                        <div class="grafico">
+                            <img src="/CashStock/assets/imgs/linégrafo2.svg" alt="Linégrafo"></img>
                         </div>
+                        
                     </div>  
             </main>
         </div>
