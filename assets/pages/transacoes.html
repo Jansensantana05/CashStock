@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CashStock</title>
+
+    <link rel="stylesheet" href="/CashStock/assets/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="/CashStock/assets/css/style.css">
+    <link rel="stylesheet" href="/CashStock/assets/css/style_transacoes.css">
+</head>
+
+<body>
+    <div class="container-fluid gx-0">
+
+        <!--Linha 1-->
+        <div class="row gx-0">
+
+            <!--Cabeçalho-->
+            <header class="col-12 row gx-0">
+                <!--Cabeçalho Esquerdo-->
+                <div class="col-8 head-left">
+                    <a href="" class="logo">
+                        <img class="img" src="/CashStock/assets/imgs/logo-ifood-1024 1.svg" alt="Logo"> 
+                    </a>
+                    
+                    <p class="p-central">Central de Controle</p>
+                </div>
+
+                <!--Cabeçalho Direito-->
+                <div class="col-4 head-right">
+                    
+                    <a href="" class="menu">
+                        <img class="img" src="/CashStock/assets/imgs/Calendar.svg" alt="">
+                    </a>
+
+                    <a href="" class="menu">
+                        <img class="img" src="/CashStock/assets/imgs/Notification (2).svg" alt="">
+                    </a>
+
+                    <a href="" class="menu">
+                        <img class="img" src="/CashStock/assets/imgs/Ellipse 2.svg" alt="">
+                    </a>
+
+                </div>
+            </header>
+
+        </div>
+        
+        <!--Linha 2-->
+        <div class="row gx-0">
+            <!--Barra Lateral-->
+            <nav class="col-12 col-md-2 nav">
+                
+                <!--Produto-->
+                <div class="nav-block">
+                    <button class="dropdown">
+                        <div class="nav-header">
+                            <img src="/CashStock/assets/imgs/icon_tag_price_discount.svg" alt="">
+                            <h3 class="nav-title">Produto</h3>
+                        </div>
+                    </button>
+
+                    <div class="nav-content">
+                        <a href="#">Produtos</a>
+                        <a href="#">Adicionar Produto</a>
+                        <a href="#">Gerir Estoque</a>
+                    </div>
+
+                </div>
+
+                <!--Pedido-->
+                <div class="nav-block">
+                    <button class="dropdown">
+                        <div class="nav-header">
+                            <img src="/CashStock/assets/imgs/icon_archive.svg" alt="">
+                            <h3 class="nav-title">Pedido</h3>
+                        </div>
+                    </button>
+
+                    <div class="nav-content">
+                        <a href="#">Meus Pedidos</a>
+                        <a href="#">Cancelado</a>
+                        <a href="#">Reembolso</a>
+                    </div>
+
+                </div>
+
+                <!--Finanças-->
+                <div class="nav-block">
+                    <button class="dropdown">
+                        <div class="nav-header">
+                            <img src="/CashStock/assets/imgs/icon_wallet.svg" alt="">
+                            <h3 class="nav-title">Finanças</h3>
+                        </div>
+                    </button>
+
+                    <div class="nav-content">
+                        <a href="#">Saldo</a>
+                        <a href="#">Enviar Dinheiro</a>
+                        <a href="#">Receber Diheiro</a>
+                        <a href="#">Transações</a>
+                        <a href="#">Despesas Estimadas</a>
+                        <a href="#">Relatório Financeiro</a>
+                    </div>
+                    
+                </div>
+            </nav>
+            
+            <!--Conteudo Principal-->
+            <main class="col-12 col-md-10">
+                <h2>Transações</h2>
+                <section class="order-list background-box">
+                    <table>
+                        <thead>
+                            <tr>
+                                <div class="search-bar">
+                                    <input type="text" placeholder="Pesquisar por data">
+                                </div>
+                                <th class="gray order-list-td-left">Data</th>
+                                <th class="gray order-list-td-left">Descrição</th>
+                                <th class="gray order-list-td-center">Forma de Pagamento</th>
+                                <th class="gray order-list-td-center">Fluxo do Dinheiro</th>
+                                <th class="gray order-list-td-center">Quantia</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="gray order-list-left"data-label="Data">11-06-24</td>
+                                <td class="order-list-left" data-label="Descrição">Pedido #567732</td>
+                                <td class="order-list-center"data-label="Forma de Pagamento"><strong>Pix</strong></td>
+                                <td class="gray order-list-center" data-label="Fluxo do Dinheiro">Entrada</td>
+                                <td class="bold order-list-center" data-label="Quantia">+R$30,00</td>
+                            </tr>
+                            <tr>
+                                <td class="gray order-list-left" data-label="Data">11-06-24</td>
+                                <td class="order-list-left" data-label="Descrição">Pedido #908765</td>
+                                <td class="order-list-center" data-label="Forma de Pagamento"><strong>Cartão</strong></td>
+                                <td class="gray order-list-center" data-label="Fluxo do Dinheiro">Entrada</td>
+                                <td class="bold order-list-center" data-label="Quantia">+R$17,90</td>
+                            </tr>
+                            <tr>
+                                <td class="gray order-list-left" data-label="Data">11-06-24</td>
+                                <td class="order-list-left" data-label="Descrição">Pedido #870923</td>
+                                <td class="order-list-center" data-label="Forma de Pagamento"><strong>Pix</strong></td>
+                                <td class="gray order-list-center" data-label="Fluxo do Dinheiro">Entrada</td>
+                                <td class="bold order-list-center" data-label="Quantia">+R$49,90</td>
+                            </tr>
+                            <tr>
+                                <td class="gray order-list-left" data-label="Data">11-06-24</td>
+                                <td class="order-list-left" data-label="Descrição">Pedido #123986</td>
+                                <td class="order-list-center" data-label="Forma de Pagamento"><strong>Dinheiro</strong></td>
+                                <td class="gray order-list-center" data-label="Fluxo do Dinheiro">Entrada</td>
+                                <td class="bold order-list-center" data-label="Quantia">+R$100,00</td>
+                            </tr>
+                            <tr>
+                                <td class="gray order-list-left" data-label="Data">11-06-24</td>
+                                <td class="order-list-left" data-label="Descrição">Pedido #458712</td>
+                                <td class="order-list-center" data-label="Forma de Pagamento"><strong>Dinheiro</strong></td>
+                                <td class="gray order-list-center" data-label="Fluxo do Dinheiro">Entrada</td>
+                                <td class="bold order-list-center" data-label="Quantia">+R$29,90</td>
+                            </tr>
+                            <tr>
+                                <td class="gray order-list-left" data-label="Data">11-06-24</td>
+                                <td class="order-list-left" data-label="Descrição">Pedido #756410</td>
+                                <td class="order-list-center" data-label="Forma de Pagamento"><strong>Pix</strong></td>
+                                <td class="gray order-list-center" data-label="Fluxo do Dinheiro">Entrada</td>
+                                <td class="bold order-list-center" data-label="Quantia">+R$19,90</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                        </button>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+    <script src="/CashStock/assets/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

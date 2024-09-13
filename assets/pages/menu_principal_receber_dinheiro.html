@@ -5,11 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CashStock</title>
-
     <link rel="stylesheet" href="/CashStock/assets/css/bootstrap-grid.css">
     <link rel="stylesheet" href="/CashStock/assets/css/style.css">
-    <link rel="stylesheet" href="/CashStock/assets/css/style_dashboard.css">
-    <link rel="stylesheet" href="/CashStock/assets/css/style_despesas_menu_rapido.css">
+    <link rel="stylesheet" href="/CashStock/assets/css/style_receber_dinheiro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
 
 <body>
@@ -111,46 +110,19 @@
             
             <!--Conteudo Principal-->
             <main class="col-12 col-md-10">
-                
 
-                <div class="div-dashboard">
-
-                    <div class="menu-dashboard">
-    
-                        <a href="" class="btn-menu">Visão Geral</a>
-                        <a href="" class="btn-menu">Vendas</a>
-                        <a href="" class="btn-menu">Produto</a>
-                        <a href="" class="btn-menu selected">Despesas</a>
-                        <a href="" class="btn-menu">Assistente Financeiro</a>
-
+                <h2 class="Inter">Receber Dinheiro</h2>
+                <div class="background_box">
+                    <div class="scan_qrcode">Escaneie o QRCode para enviar um Pix:
+                        <div class="qrcode"></div>
+                        <button type="button" class="btn button_box">Copiar dados da conta</button>
+                        <div class="manual_trans">Ou você pode copiar os dados para fazer uma tranferência manual</div>
                     </div>
-                    <div class="dashboard">
-                        <div>
-                            <form action="" class="formulario-pesquisa">
-                                <div class="dados-box">
-                                    <label for="">Periodo de dados:</label>
-                                    <input type="text" placeholder="">
-                                </div>
-                                <div class="dados-box">
-                                    <button><img src="/CashStock/assets/imgs/icon_search_.svg" alt=""></button>
-                                    <input type="text" placeholder="Pesquisa personalizada">
-                                </div>
-                            </form>
-                        </div>
-
-                        <div class="grafico">
-                            <img src="/CashStock/assets/imgs/grafico_Pizza.svg" alt="">
-                        </div>
-                    </div>
-
                 </div>
-
             </main>
         </div>
     </div>
-    <script>
-        
-    </script>
+    <script src="/CashStock/assets/js/bootstrap.bundle.js"></script>
 </body>
 
 </html>
