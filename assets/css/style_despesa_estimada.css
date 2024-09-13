@@ -10,6 +10,11 @@
 
     }
 
+h4{
+    font-size: 26px;
+}
+
+
 .legenda {
     flex-direction: column;
     color: #666666;
@@ -53,4 +58,4 @@
     background-color: white;
     border-radius: 15px;
 }
-/*I don't know how i did it, I just did it, it was hard
+/*I don't know how i did it, I just did it, it was hard >:3
