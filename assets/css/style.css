@@ -99,17 +99,17 @@ main {
 
 .nav-content a {
     color: #666666;
-    font-size: 14px;
+    font-size: 15px;
     text-decoration: none;
     font-weight: 400;
-    margin-top: 6px;
-    margin-bottom: 6px;
-    margin-left: 16px;
+    padding: 8px;
 }
 
 .nav-content a:hover {
     color: #E21826;
-    text-decoration: underline;
+    background-color: #fff6f6;
+    font-weight: 600;
+    height: auto;
 }
 
 .nav-header{
@@ -127,6 +127,38 @@ main {
     font-weight: 600;
     margin: 0;
     margin-left: 6px;
+}
+
+.formulario-pesquisa {
+    display: flex;
+    flex-direction: row;
+}
+
+.dados-box{
+    border: #666666 solid 1px;
+    margin: 3px;
+    padding: 2px;
+    padding-top: 1px;
+    border-radius: 5px;
+}
+
+.dados-box label{
+    color: #666666;
+    font-size: 14px;
+}
+
+.dados-box img{
+    width: 10px;
+}
+
+.dados-box input{
+    border: none;
+    width: 145px;
+}
+
+.dados-box button{
+    background-color: transparent;
+    border: none;
 }
 
 @media (min-width: 768px) {
@@ -154,10 +186,14 @@ main {
 
 }
 
-@media (max-width: 860px) {
-    
+@media (max-width: 1120px) { 
     .nav-content a {
-        font-size: 13px;
+        font-size: 14px;
     }
+}
 
+@media (max-width: 952px) { 
+    .nav-content a {
+        font-size: 12px;
+    }
 }

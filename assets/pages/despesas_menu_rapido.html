@@ -6,11 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CashStock</title>
 
-    <link rel="stylesheet" href="./assets/css/bootstrap-grid.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/style_dashboard.css">
-    <link rel="stylesheet" href="./assets/css/style_visão_geral.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="/CashStock/assets/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="/CashStock/assets/css/style.css">
+    <link rel="stylesheet" href="/CashStock/assets/css/style_dashboard.css">
+    <link rel="stylesheet" href="/CashStock/assets/css/style_despesas_menu_rapido.css">
 </head>
 
 <body>
@@ -24,7 +23,7 @@
                 <!--Cabeçalho Esquerdo-->
                 <div class="col-8 head-left">
                     <a href="" class="logo">
-                        <img class="img" src="./assets/imgs/logo-ifood-1024 1.svg" alt="Logo"> 
+                        <img class="img" src="/CashStock/assets/imgs/logo-ifood-1024 1.svg" alt="Logo"> 
                     </a>
                     
                     <p class="p-central">Central de Controle</p>
@@ -34,15 +33,15 @@
                 <div class="col-4 head-right">
                     
                     <a href="" class="menu">
-                        <img class="img" src="./assets/imgs/Calendar.svg" alt="">
+                        <img class="img" src="/CashStock/assets/imgs/Calendar.svg" alt="">
                     </a>
 
                     <a href="" class="menu">
-                        <img class="img" src="./assets/imgs/Notification (2).svg" alt="">
+                        <img class="img" src="/CashStock/assets/imgs/Notification (2).svg" alt="">
                     </a>
 
                     <a href="" class="menu">
-                        <img class="img" src="./assets/imgs/Ellipse 2.svg" alt="">
+                        <img class="img" src="/CashStock/assets/imgs/Ellipse 2.svg" alt="">
                     </a>
 
                 </div>
@@ -59,7 +58,7 @@
                 <div class="nav-block">
                     <button class="dropdown">
                         <div class="nav-header">
-                            <img src="./assets/imgs/icon_tag_price_discount.svg" alt="">
+                            <img src="/CashStock/assets/imgs/icon_tag_price_discount.svg" alt="">
                             <h3 class="nav-title">Produto</h3>
                         </div>
                     </button>
@@ -76,7 +75,7 @@
                 <div class="nav-block">
                     <button class="dropdown">
                         <div class="nav-header">
-                            <img src="./assets/imgs/icon_archive.svg" alt="">
+                            <img src="/CashStock/assets/imgs/icon_archive.svg" alt="">
                             <h3 class="nav-title">Pedido</h3>
                         </div>
                     </button>
@@ -93,7 +92,7 @@
                 <div class="nav-block">
                     <button class="dropdown">
                         <div class="nav-header">
-                            <img src="./assets/imgs/icon_wallet.svg" alt="">
+                            <img src="/CashStock/assets/imgs/icon_wallet.svg" alt="">
                             <h3 class="nav-title">Finanças</h3>
                         </div>
                     </button>
@@ -118,47 +117,40 @@
 
                     <div class="menu-dashboard">
     
-                        <a href="" class="btn-menu selected">Visão Geral</a>
+                        <a href="" class="btn-menu">Visão Geral</a>
                         <a href="" class="btn-menu">Vendas</a>
                         <a href="" class="btn-menu">Produto</a>
-                        <a href="" class="btn-menu">Despesas</a>
+                        <a href="" class="btn-menu selected">Despesas</a>
                         <a href="" class="btn-menu">Assistente Financeiro</a>
 
                     </div>
-                        <div class="maincontent">
-                            <!-- primeira linha-->
-                            <div class="line">
-                            <div class="caixa">
-                            Período dos dados: tempo real 
-                            </div>
-                            <div class="search-bar">
-                                <input type="text" placeholder="Pesquisa personalizada">
-                            </div>
-                            </div>
+                    <div class="dashboard">
+                        <div>
+                            <form action="" class="formulario-pesquisa">
+                                <div class="dados-box">
+                                    <label for="">Periodo de dados:</label>
+                                    <input type="text" placeholder="">
+                                </div>
+                                <div class="dados-box">
+                                    <button><img src="/CashStock/assets/imgs/icon_search_.svg" alt=""></button>
+                                    <input type="text" placeholder="Pesquisa personalizada">
+                                </div>
+                            </form>
+                        </div>
 
-                            <!-- segunda linha-->
-                            <div class="line">
-                            <div class="caixa2">
-                                Vendas <i class="fa-solid fa-circle-info" style="color: #666666;"></i> <p>R$1661,00</p>
-                            </div>
-                            <div class="caixa2">
-                                Pedidos <i class="fa-solid fa-circle-info" style="color: #666666;"></i> <p>43</p>
-                            </div>
-                            <div class="caixa2">
-                                Ticket médio <i class="fa-solid fa-circle-info" style="color: #666666;"></i> <p>R$27,00</p>
-                            </div>
-                            <div class="caixa2">
-                                Novos clientes <i class="fa-solid fa-circle-info" style="color: #666666;"></i> <p>30</p>
-                            </div>
-                            <div class="line">
-                            <img src="./assets/imgs/linégrafo.png" alt="Linégrafo"></img>
-                            </div>
+                        <div class="grafico">
+                            <img src="/CashStock/assets/imgs/grafico_Pizza.svg" alt="">
                         </div>
                     </div>
+
+                </div>
+
             </main>
         </div>
     </div>
-    <script src="./assets/js/bootstrap.bundle.js"></script>
+    <script>
+        
+    </script>
 </body>
 
 </html>

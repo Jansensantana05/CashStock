@@ -3,12 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CashStock</title>
 
     <link rel="stylesheet" href="/CashStock/assets/css/bootstrap-grid.css">
     <link rel="stylesheet" href="/CashStock/assets/css/style.css">
-    <link rel="stylesheet" href="/CashStock/assets/css/style_dashboard.css">
+    <link rel="stylesheet" href="/CashStock/assets/css/style_enviar_dinheiro.css"> 
 </head>
 
 <body>
@@ -22,15 +23,15 @@
                 <!--Cabeçalho Esquerdo-->
                 <div class="col-8 head-left">
                     <a href="" class="logo">
-                        <img class="img" src="/CashStock/assets/imgs/logo-ifood-1024 1.svg" alt="Logo"> 
+                        <img class="img" src="/CashStock/assets/imgs/logo-ifood-1024 1.svg" alt="Logo">
                     </a>
-                    
+
                     <p class="p-central">Central de Controle</p>
                 </div>
 
                 <!--Cabeçalho Direito-->
                 <div class="col-4 head-right">
-                    
+
                     <a href="" class="menu">
                         <img class="img" src="/CashStock/assets/imgs/Calendar.svg" alt="">
                     </a>
@@ -47,12 +48,12 @@
             </header>
 
         </div>
-        
+
         <!--Linha 2-->
         <div class="row gx-0">
             <!--Barra Lateral-->
             <nav class="col-12 col-md-2 nav">
-                
+
                 <!--Produto-->
                 <div class="nav-block">
                     <button class="dropdown">
@@ -104,35 +105,67 @@
                         <a href="#">Despesas Estimadas</a>
                         <a href="#">Relatório Financeiro</a>
                     </div>
-                    
+
                 </div>
             </nav>
-            
+
             <!--Conteudo Principal-->
             <main class="col-12 col-md-10">
-                
+                <h2>Enviar Dinheiro</h2>
+                <div class="container">
+                    <div class="form-container">
+                        <h1>Quem vai receber</h1>
+                        <form>
+                            <div class="form-group">
+                                <label for="instituicao">Instituição <span class="tooltip">?</span></label>
+                                <select id="instituicao" class="form-instituicao">
+                                    <option value="">Selecione a instituição</option>
+                                    <option value="">CAIXA ECONOMICA FEDERAL</option>
+                                    <option value="">BANCO DO BRASIL S.A.</option>
+                                    <option value="">BANCO LEGAL</option>
+                                    
+                                </select>
+                            </div>
 
-                <div class="div-dashboard">
+                            <div class="form-group inline">
+                                <div>
+                                    <label for="agencia">Agência <span class="tooltip">?</span></label>
+                                    <input type="text" id="agencia" placeholder="0000">
+                                </div>
+                                <div>
+                                    <label for="conta">Conta <span class="tooltip">?</span></label>
+                                    <input type="text" id="conta" placeholder="0000000-0">
+                                </div>
+                            </div>
 
-                    <div class="menu-dashboard">
-    
-                        <a href="" class="btn-menu selected">Visão Geral</a>
-                        <a href="" class="btn-menu">Vendas</a>
-                        <a href="" class="btn-menu">Produto</a>
-                        <a href="" class="btn-menu">Despesas</a>
-                        <a href="" class="btn-menu">Assistente Financeiro</a>
+                            <div class="form-group">
+                                <label for="tipo-conta">Tipo de conta</label>
+                                <select id="tipo-conta" class="form-tipo-conta">
+                                    <option value="corrente">Corrente</option>
+                                    <option value="poupanca">Poupança</option>
+                                </select>
+                            </div>
 
+                            <fieldset>
+                                <legend>Quem vai receber?</legend>
+                                <label class="radio-label">
+                                    <input type="radio" name="receber" value="para-mim" checked>
+                                    Para mim
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="receber" value="para-outra-pessoa">
+                                    Para outra pessoa
+                                </label>
+                            </fieldset>
+                            <div class="imagem-canto">
+                                <img src="/CashStock/assets/imgs/enviarDinheiro.svg" alt="Imagem no Canto">
+                            </div>
+                            <button type="submit" class="botao-confirmar">Confirmar</button>
+                        </form>
                     </div>
-                    <div class="dashboard">
-                        Teste
-                    </div>
-
                 </div>
-
             </main>
-        </div>
-    </div>
-    <script src="/CashStock/assets/js/bootstrap.bundle.js"></script>
+                <script src="/CashStock/assets/js/bootstrap.bundle.js"></script>
 </body>
 
 </html>
