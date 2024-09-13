@@ -8,9 +8,7 @@
 
     <link rel="stylesheet" href="/CashStock/assets/css/bootstrap-grid.css">
     <link rel="stylesheet" href="/CashStock/assets/css/style.css">
-    <link rel="stylesheet" href="/CashStock/assets/css/style_dashboard.css">
-    <link rel="stylesheet" href="/CashStock/assets/css/style_visão_geral.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="/CashStock/assets/css/style_relatorio_financeiro.css">
 </head>
 
 <body>
@@ -24,15 +22,15 @@
                 <!--Cabeçalho Esquerdo-->
                 <div class="col-8 head-left">
                     <a href="" class="logo">
-                        <img class="img" src="/CashStock/assets/imgs/logo-ifood-1024 1.svg" alt="Logo"> 
+                        <img class="img" src="/CashStock/assets/imgs/logo-ifood-1024 1.svg" alt="Logo">
                     </a>
-                    
+
                     <p class="p-central">Central de Controle</p>
                 </div>
 
                 <!--Cabeçalho Direito-->
                 <div class="col-4 head-right">
-                    
+
                     <a href="" class="menu">
                         <img class="img" src="/CashStock/assets/imgs/Calendar.svg" alt="">
                     </a>
@@ -49,12 +47,12 @@
             </header>
 
         </div>
-        
+
         <!--Linha 2-->
         <div class="row gx-0">
             <!--Barra Lateral-->
             <nav class="col-12 col-md-2 nav">
-                
+
                 <!--Produto-->
                 <div class="nav-block">
                     <button class="dropdown">
@@ -106,59 +104,40 @@
                         <a href="#">Despesas Estimadas</a>
                         <a href="#">Relatório Financeiro</a>
                     </div>
-                    
+
                 </div>
             </nav>
-            
+
             <!--Conteudo Principal-->
             <main class="col-12 col-md-10">
-                
-
-                <div class="div-dashboard">
-
-                    <div class="menu-dashboard">
-    
-                        <a href="" class="btn-menu selected">Visão Geral</a>
-                        <a href="" class="btn-menu">Vendas</a>
-                        <a href="" class="btn-menu">Produto</a>
-                        <a href="" class="btn-menu">Despesas</a>
-                        <a href="" class="btn-menu">Assistente Financeiro</a>
+                <h2>Relatório financeiro</h2>
+                <div class="container">
+                    <div class="chart-container">
+                        <div style="width: 90%; height: 100%;">
+                            <canvas id="financeChart"></canvas>
+                        </div>
 
                     </div>
-                        <div class="maincontent">
-                            <!-- primeira linha-->
-                            <div class="line">
-                            <div class="caixa">
-                            Período dos dados: tempo real 
-                            </div>
-                            <div class="search-bar">
-                                <input type="text" placeholder="Pesquisa personalizada">
-                            </div>
-                            </div>
-
-                            <!-- segunda linha-->
-                            <div class="line">
-                            <div class="caixa2">
-                                Vendas <i class="fa-solid fa-circle-info" style="color: #666666;"></i> <p>R$1661,00</p>
-                            </div>
-                            <div class="caixa2">
-                                Pedidos <i class="fa-solid fa-circle-info" style="color: #666666;"></i> <p>43</p>
-                            </div>
-                            <div class="caixa2">
-                                Ticket médio <i class="fa-solid fa-circle-info" style="color: #666666;"></i> <p>R$27,00</p>
-                            </div>
-                            <div class="caixa2">
-                                Novos clientes <i class="fa-solid fa-circle-info" style="color: #666666;"></i> <p>30</p>
-                            </div>
-                            <div class="line">
-                            <img src="/CashStock/assets/imgs/linégrafo.png" alt="Linégrafo"></img>
-                            </div>
+                    <div class="summary">
+                        <div class="summary-item">
+                            <h3>Receitas geradas</h3>
+                            <p>R$20.370</p>
+                        </div>
+                        <div class="summary-item">
+                            <h3>Despesas prevista</h3>
+                            <p>-R$10.186</p>
+                        </div>
+                        <div class="summary-item">
+                            <h3>Lucro previsto</h3>
+                            <p>R$10.184</p>
                         </div>
                     </div>
             </main>
         </div>
     </div>
     <script src="/CashStock/assets/js/bootstrap.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/CashStock/assets/js/script.js"></script>
 </body>
 
 </html>

@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CashStock</title>
+
     <link rel="stylesheet" href="/CashStock/assets/css/bootstrap-grid.css">
     <link rel="stylesheet" href="/CashStock/assets/css/style.css">
     <link rel="stylesheet" href="/CashStock/assets/css/style_dashboard.css">
-    <link rel="stylesheet" href="/CashStock/assets/css/vendas_menu_abas.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="/CashStock/assets/css/style_visão_geral_menu_rapido.css">
 </head>
 
 <body>
@@ -111,35 +111,72 @@
             
             <!--Conteudo Principal-->
             <main class="col-12 col-md-10">
+                
+
                 <div class="div-dashboard">
+
                     <div class="menu-dashboard">
-                        <a href="" class="btn-menu">Visão Geral</a>
-                        <a href="" class="btn-menu selected">Vendas</a>
+    
+                        <a href="" class="btn-menu selected">Visão Geral</a>
+                        <a href="" class="btn-menu">Vendas</a>
                         <a href="" class="btn-menu">Produto</a>
                         <a href="" class="btn-menu">Despesas</a>
                         <a href="" class="btn-menu">Assistente Financeiro</a>
-                    </div>
-                    <div class="maincontent">
-                        <!-- primeira linha-->
-                        <div class="line">
-                            <div class="caixa">
-                                Período dos dados: tempo real
-                            </div>
-                            <div class="search-bar">
-                                <input type="text" placeholder="Pesquisa personalizada">
-                            </div>
-                        </div>
 
-                        <!-- segunda linha-->
-                        <div class="line">
-                            <div class="caixa2">
-                                Vendas <i class="fa-solid fa-circle-info" style="color: #666666;"></i> <p>R$1661,00</p>
+                    </div>
+
+                        <div class="dashboard">
+                            <!-- primeira linha-->
+                            <div>
+                                <form action="" class="formulario-pesquisa">
+                                    <div class="dados-box">
+                                        <label for="">Periodo de dados:</label>
+                                        <input type="text" placeholder="">
+                                    </div>
+                                    <div class="dados-box">
+                                        <button><img src="/CashStock/assets/imgs/icon_search_.svg" alt=""></button>
+                                        <input type="text" placeholder="Pesquisa personalizada">
+                                    </div>
+                                </form>
                             </div>
-                            <div class="line">
-                                <img src="/CashStock/assets/imgs/linégrafo2.png" alt="Linégrafo"></img>
+
+                            <!-- segunda linha-->
+                            <div class="div-letreiro">
+                                <div class="letreiro">
+                                    <div class="letreiro-head">
+                                        <p>Vendas</p>
+                                        <img src="/CashStock/assets/imgs/icon_info_.svg" alt="">
+                                    </div>
+                                    <p>R$1661,00</p>
+                                </div>
+                                <div class="letreiro">
+                                    <div class="letreiro-head">
+                                        <p>Pedidos</p>
+                                        <img src="/CashStock/assets/imgs/icon_info_.svg" alt="">
+                                    </div>
+                                    <p>43</p>
+                                </div>
+                                <div class="letreiro">
+                                    <div class="letreiro-head">
+                                        <p>Ticket Médio</p>
+                                        <img src="/CashStock/assets/imgs/icon_info_.svg" alt="">
+                                    </div>
+                                    <p>R$27,00</p>
+                                </div>
+                                <div class="letreiro">
+                                    <div class="letreiro-head">
+                                        <p>Novos Clientes</p>
+                                        <img src="/CashStock/assets/imgs/icon_info_.svg" alt="">
+                                    </div>
+                                    <p>30</p>
+                                </div>
+                            </div>    
+
+                            <div class="grafico">
+                                <img src="/CashStock/assets/imgs/linégrafo.svg" alt="Linégrafo"></img>
                             </div>
                         </div>
-                    </div>  
+                </div>
             </main>
         </div>
     </div>
