@@ -186,10 +186,14 @@ main {
 
 }
 
-@media (max-width: 860px) {
-    
+@media (max-width: 1120px) { 
     .nav-content a {
-        font-size: 13px;
+        font-size: 14px;
     }
+}
 
+@media (max-width: 952px) { 
+    .nav-content a {
+        font-size: 12px;
+    }
 }

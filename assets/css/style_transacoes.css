@@ -7,15 +7,13 @@ h2 {
   }
 
 .background-box {
-  width: 83%;
-  height: 90%;
+  width: 98%;
   background-color: rgb(255, 255, 255);
   margin-top: 5px;
   margin-left: 10px;
   opacity: 1;
   position: flex;
-  top: 127px;
-  left: 279px;
+    top: 127px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   border-bottom-left-radius: 8px;
@@ -89,4 +87,22 @@ h2 {
 }
 .bold{
   font-weight: bold;
+}
+
+@media (max-width: 620px) {
+  .order-list-center{
+    padding: 10px;
+  }
+
+  .order-list-left{
+    padding: 10px;
+  }
+
+  .order-list-td-center{
+    padding: 10px;
+  }
+
+  .order-list-td-left{
+    padding: 10px;
+  }
 }
