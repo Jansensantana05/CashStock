@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CashStock</title>
+
+    <link rel="stylesheet" href="../css/bootstrap-grid.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style_gerir_estoque.css">
+</head>
+
+<body>
+    <div class="container-fluid gx-0">
+
+        <!--Linha 1-->
+        <div class="row gx-0">
+
+            <!--Cabeçalho-->
+            <header class="col-12 row gx-0">
+                <!--Cabeçalho Esquerdo-->
+                <div class="col-8 head-left">
+                    <a href="" class="logo">
+                        <img class="img" src="../imgs/logo-ifood-1024 1.svg" alt="Logo"> 
+                    </a>
+                    
+                    <p class="p-central">Central de Controle</p>
+                </div>
+
+                <!--Cabeçalho Direito-->
+                <div class="col-4 head-right">
+                    
+                    <a href="" class="menu">
+                        <img class="img" src="../imgs/Calendar.svg" alt="">
+                    </a>
+
+                    <a href="" class="menu">
+                        <img class="img" src="../imgs/Notification (2).svg" alt="">
+                    </a>
+
+                    <a href="" class="menu">
+                        <img class="img" src="../imgs/Ellipse 2.svg" alt="">
+                    </a>
+
+                </div>
+            </header>
+
+        </div>
+        
+        <!--Linha 2-->
+        <div class="row gx-0">
+            <!--Barra Lateral-->
+            <nav class="col-12 col-md-2 nav">
+                
+                <!--Produto-->
+                <div class="nav-block">
+                    <button class="dropdown">
+                        <div class="nav-header">
+                            <img src="../imgs/icon_tag_price_discount.svg" alt="">
+                            <h3 class="nav-title">Produto</h3>
+                        </div>
+                    </button>
+
+                    <div class="nav-content">
+                        <a href="#">Produtos</a>
+                        <a href="#">Adicionar Produto</a>
+                        <a href="#">Gerir Estoque</a>
+                    </div>
+
+                </div>
+
+                <!--Pedido-->
+                <div class="nav-block">
+                    <button class="dropdown">
+                        <div class="nav-header">
+                            <img src="../imgs/icon_archive.svg" alt="">
+                            <h3 class="nav-title">Pedido</h3>
+                        </div>
+                    </button>
+
+                    <div class="nav-content">
+                        <a href="#">Meus Pedidos</a>
+                        <a href="#">Cancelado</a>
+                        <a href="#">Reembolso</a>
+                    </div>
+
+                </div>
+
+                <!--Finanças-->
+                <div class="nav-block">
+                    <button class="dropdown">
+                        <div class="nav-header">
+                            <img src="../imgs/icon_wallet.svg" alt="">
+                            <h3 class="nav-title">Finanças</h3>
+                        </div>
+                    </button>
+
+                    <div class="nav-content">
+                        <a href="#">Saldo</a>
+                        <a href="#">Enviar Dinheiro</a>
+                        <a href="#">Receber Diheiro</a>
+                        <a href="#">Transações</a>
+                        <a href="#">Despesas Estimadas</a>
+                        <a href="#">Relatório Financeiro</a>
+                    </div>
+                    
+                </div>
+            </nav>
+            
+            <!--Conteudo Principal-->
+            <main class="col-12 col-md-10">
+                <h2 class="titulo-principal">Gerir Estoque</h2>
+                <div class="container">
+
+                <section class="order-list">
+    
+                    <div class="search-bar">
+                        <input type="text" placeholder="Pesquisar por nome, ID, SKU">
+                        <input type="text" placeholder="Procurar por categoria">
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Produto</th>
+                                <th>Estoque</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-label="Produto"><img src="../imgs/cheeseburguer.png" alt="Cheese Burguer"> Cheese Burguer</td>
+                                <td data-label="Preço">
+                                    <strong>252</strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Produto"><img src="../imgs/batatafrita.png" alt="Batata Frita"> Batata Frita</td>
+                                <td data-label="Preço">
+                                    <strong>197</strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Produto"><img src="../imgs/combodacasa.png" alt="Combo da Casa"> Combo da Casa</td>
+                                <td data-label="Preço">
+                                    <strong>161</strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Produto"><img src="../imgs/burguerbacon.png" alt="Buguer Bacon com Cheddar"> Burguer Bacon com Cheddar</td>
+                                <td data-label="Preço">
+                                    <strong>115</strong>    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Produto"><img src="../imgs/hotdog.png" alt="Hot Dog com Cheddar"> Hot Dog com Cheddar</td>
+                                <td data-label="Preço">
+                                    <strong>83</strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Produto"><img src="../imgs/onionsring.png" alt="Onions Rings"> Onions Rings</td>
+                                <td data-label="Preço">
+                                    <strong>56</strong>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- Button Container -->
+                    <div class="button-container">
+                        <button class="scroll-button minus-button">
+                            <span class="minus">-</span>
+                        </button>
+                        <div class="number-container">
+                            <button class="scroll-button arrow-button">
+                                <span class="arrow-down">↓</span>
+                            </button>
+                            <div class="number-display">0</div>
+                        </div>
+                        <button class="scroll-button plus-button">
+                            <span class="plus">+</span>
+                        </button>
+                    </div>
+
+                </section>
+
+            </div>
+            </main>
+        </div>
+    </div>
+    <script src="../js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
