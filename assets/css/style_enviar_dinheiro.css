@@ -1,29 +1,29 @@
-.container {
+.conteudo {
     background-color: white;
-    padding: 20px;
-    border-radius: 7px;
-    margin-left: 15px;
+    border-radius: 0.65vh;
+    width: 98%;
+    margin: 1.39vh;
     height: 80%;
 }
 
 header {
-    padding-bottom: 10px;
+    padding-bottom: 0.93vh;
     border-bottom: 1px solid #ddd;
 }
 
 h2 {
-    margin-left: 15px;
-    margin-bottom: 10px;
+    margin-left: 1.39vh;
+    margin-bottom: 0.93vh;
     color: #242424;
 }
 
 h1 {
-    margin-left: 15px;
-    margin-bottom: 10px;
+    margin-left: 1.39vh;
+    margin-bottom: 0.93vh;
     color: #707070;
 }
 
-.form-container {
+.form-conteudo {
     display: flex;
     flex-direction: column;
 }
@@ -114,6 +114,13 @@ fieldset {
     width: 30%;
 }
 
+.form-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 2rem;
+}
+
 .botao-confirmar {
     width: 150px;
     padding: 15px;
@@ -123,7 +130,7 @@ fieldset {
     color: rgb(0, 0, 0);
     font-weight: bold;
     cursor: pointer;
-    margin-left: 50%;
+    margin-left: 35%;
 }
 
 .botao-confirmar:hover {
@@ -131,36 +138,99 @@ fieldset {
 }
 
 .imagem-canto {
-    position: fixed;
-    bottom: 6.25rem;
-    right: 9rem;
-    z-index: 1;
+    position: absolute;
+    top: 35%;
+    left: 70%;
+    max-width: 20%;
+    align-self: flex;
 }
 
 .imagem-canto img {
-    width: 25vmax;
+    width: 100%;
     height: auto;
+    object-fit: contain;
 }
 
+@media (max-width: 1024px) {
+    .form-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagem-canto {
+        max-width: 40%;
+    }
+
+    .imagem-canto {
+        top: 45%;
+        left: 65%;
+        max-width: 26%;
+    }
+
+    .botao-confirmar {
+        margin-left: 10%;
+    }
+
+    .inline {
+        gap: 2.25rem;
+    }
+
+    .conteudo {
+        margin: 0;
+        height: 90%;
+    }
+
+    input[type="text"],
+    select {
+        width: 110px;
+    }
+
+    .form-group {
+        margin-bottom: 8px;
+    }
+
+}
 
 @media (max-width: 768px) {
     .imagem-canto {
-        bottom: 20rem;
-        right: 1rem;
+        max-width: 70%;
     }
 
-    .imagem-canto img {
-        width: 25vmax;
+    .imagem-canto {
+        top: 40%;
+        left: 60%;
+        max-width: 30%;
+    }
+}
+
+@media (max-width: 540px) {
+    .imagem-canto {
+        top: 65%;
+        left: 52%;
+        max-width: 40%;
     }
 }
 
 @media (max-width: 480px) {
     .imagem-canto {
-        bottom: 20rem;
-        right: 1rem;
+        max-width: 90%;
     }
 
-    .imagem-canto img {
-        width: 20vmax;
+    .imagem-canto {
+        top: 55%;
+        left: 52%;
+        max-width: 40%;
+    }
+}
+
+@media (max-width: 360px) {
+    .imagem-canto {
+        max-width: 10%;
+    }
+
+    .imagem-canto {
+        top: 63%;
+        left: 59%;
+        max-width: 40%;
     }
 }

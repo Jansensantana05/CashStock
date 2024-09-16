@@ -17,13 +17,12 @@ h2 {
 .search-bar input {
     padding: 10px 20px 10px 40px;
     font-size: 0.9em;
-    width: 25vh;
+    width: 21vh;
     height: 25px;
     border: 1px solid #ccc;
     border-radius: 4px;
     margin: 12px;
-    background: url(/CashStock/assets/imgs/icon_search_.svg) no-repeat 10px center;
-    ;
+    background: url(../imgs/icon_search_.svg) no-repeat 10px center;
     background-size: 20px;
     background-color: #fff;
 }
@@ -117,4 +116,13 @@ h2 {
 
 .container-fluid {
     width: 100%;
+}
+
+@media (max-width: 480px) {
+    .search-bar input {
+        padding: 5px 5px 5px 7px;
+        font-size: 0.8em;
+        width: auto;
+        height: 25px;
+    }
 }
