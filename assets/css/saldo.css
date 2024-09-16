@@ -37,6 +37,7 @@ main header h2 {
 
 /* conteúdo */
 .order-list table {
+    
     width: 100%;
     border-collapse: collapse;
     background-color: #fff;
@@ -80,6 +81,8 @@ main header h2 {
 
 /* Estilos da section e botão */
 .order-list {
+    margin-right: 20px;
+    margin-left: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -121,9 +124,6 @@ main header h2 {
     width: 100%;
 }
 
-img {
-    border-radius: 10px;
-}
 
 
 

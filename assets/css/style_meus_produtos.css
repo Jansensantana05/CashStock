@@ -1,4 +1,5 @@
 main-content {
+    
     flex-grow: 1;
     padding: 20px;
 }
@@ -37,6 +38,7 @@ main header h2 {
 
 /* conteúdo */
 .order-list table {
+    
     width: 100%;
     border-collapse: collapse;
     background-color: #fff;
@@ -46,17 +48,20 @@ main header h2 {
 
 .order-list th,
 .order-list td {
+    
     padding: 15px;
     text-align: left;
     border-bottom: 1px solid #ddd;
 }
 
 .order-list th {
+    
     background-color: #f9f9f9;
     font-weight: bold;
 }
 
 .order-list td img {
+    
     width: 50px;
     height: 50px;
     margin-right: 10px;
@@ -77,9 +82,15 @@ main header h2 {
 .order-list tbody tr:hover {
     background-color: #f1f1f1;
 }
+.order-list tbody td img {
+    border-radius: 10px;
+}
 
 /* Estilos da section e botão */
 .order-list {
+    border-radius: 15px;
+    margin-right: 20px;
+    margin-left: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -121,9 +132,6 @@ main header h2 {
     width: 100%;
 }
 
-img {
-    border-radius: 10px;
-}
 
 
 
@@ -163,6 +171,7 @@ img {
     .order-list td,
     .order-list tr {
         display: block;
+        
     }
 
     .order-list thead tr {
@@ -172,6 +181,7 @@ img {
     }
 
     .order-list tr {
+        
         border: 1px solid #ccc;
         margin-bottom: 10px;
     }
@@ -194,3 +204,4 @@ img {
         font-weight: bold;
     }
 }
+
