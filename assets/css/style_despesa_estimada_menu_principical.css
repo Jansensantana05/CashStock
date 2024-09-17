@@ -126,12 +126,6 @@ main header h2 {
     width: 100%;
 }
 
-img {
-    border-radius: 10px;
-}
-
-
-
 @media (min-width: 768px) {
     .container {
         flex-direction: row;
