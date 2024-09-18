@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/style_despesa_estimada.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="../css/style_despesa_estimada_menu_principical.css">
+    <!-- <link rel="stylesheet" href="../css/style_despesa_estimada_menu_principical.css"> -->
 </head>
 
 <body>
@@ -24,15 +24,15 @@
                 <!--Cabeçalho Esquerdo-->
                 <div class="col-8 head-left">
                     <a href="./visão_geral_menu_rapido.html" class="logo">
-                        <img class="img" src="../imgs/logo-ifood-1024 1.svg" alt="Logo"> 
+                        <img class="img" src="../imgs/logo-ifood-1024 1.svg" alt="Logo">
                     </a>
-                    
+
                     <p class="p-central">Central de Controle</p>
                 </div>
 
                 <!--Cabeçalho Direito-->
                 <div class="col-4 head-right">
-                    
+
                     <a href="" class="menu">
                         <img class="img" src="../imgs/Calendar.svg" alt="">
                     </a>
@@ -49,12 +49,12 @@
             </header>
 
         </div>
-        
+
         <!--Linha 2-->
         <div class="row gx-0">
             <!--Barra Lateral-->
             <nav class="col-12 col-md-2 nav">
-                
+
                 <!--Produto-->
                 <div class="nav-block">
                     <button class="dropdown">
@@ -106,18 +106,19 @@
                         <a href="./despesa_estimada.html">Despesas Estimadas</a>
                         <a href="./relatorio_financeiro.html">Relatório Financeiro</a>
                     </div>
-                    
+
                 </div>
             </nav>
-            
+
             <!--Conteudo Principal-->
             <main class="col-12 col-md-10">
                 <div class="maintcontent">
-                <div class="x-box-cont">
-                <h4>Despesas estimadas</h4>
-                </div>
-                    <div class="chartback">
-                        <div class="piechart"></div>
+                    <div class="x-box-cont">
+                        <h2>Despesas estimadas</h2>
+                    </div>
+                    <div class="chart-container">
+                        <div class="chartback">
+                            <div class="piechart"></div>
                             <div class="legenda">
                                 <div class="x-box-cont">
                                     <h2>VALOR</h2>
@@ -125,13 +126,19 @@
                                         <i class="fa-solid fa-square" style="color: #ff9ea5;"></i> 10% - Embalagens
                                     </strong>
                                     <strong>
-                                        <i class="fa-solid fa-square" style="color: #A20202;"></i> 10% - Manutenção de equipamentos
+                                        <i class="fa-solid fa-square" style="color: #A20202;"></i> 10% - Manutenção
+                                        de
+                                        equipamentos
                                     </strong>
                                     <strong>
-                                        <i class="fa-solid fa-square" style="color: #f44f5b;"></i> 20% - Entregas (motoboy e combustível)
+                                        <i class="fa-solid fa-square" style="color: #f44f5b;"></i> 20% - Entregas
+                                        (motoboy e
+                                        combustível)
                                     </strong>
                                     <strong>
-                                        <i class="fa-solid fa-square" style="color: #e21826;"></i> 35% - Matéria-prima (ingredientes)
+                                        <i class="fa-solid fa-square" style="color: #e21826;"></i> 35% -
+                                        Matéria-prima
+                                        (ingredientes)
                                     </strong>
                                     <strong>
                                         <i class="fa-solid fa-square" style="color: #e8c4c7;"></i> 25% - Aluguel
@@ -139,83 +146,75 @@
                                 </div>
                             </div>
                         </div>
-                        
-                            <section class="order-list">
-                                <div class="box">
-                                    <h4>Despesas fixas</h4>
-                                <table>
-                                    <thead>
-                                        <tr>
-                                            <th>Data de pagamento</th>
-                                            <th>Descrição</th>
-                                            <th>Forma de pagamento</th>
-                                            <th>Quantia</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Dia 10</td>
-                                            <td>
-                                                Aluguel
-                                            </td>
-                                            <td>Transferência bancária</td>
-                                            <td>R$2.000,00</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Dia 20</td>
-                                            <td>
-                                                Folha de pagamento de funcionários
-                                                
-                                            </td>
-                                            <td>Débito automático</td>
-                                            <td>R$4.326,00</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Dia 20</td>
-                                            <td>
-                                                Água
-                                                
-                                            </td>
-                                            <td>Débito automático</td>
-                                            <td>R$500,00</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Dia 10</td>
-                                            <td>
-                                                Internet    
-                                            </td>
-                                            <td>Débito automático</td>
-                                            <td>R$150,00</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Dia 1
-                                            </td>
-                                            <td>
-                                                Energia
-                                                
-                                            </td>
-                                            <td>Débito automático</td>
-                                            <td>R$300,00</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Dia 30</td>
-                                            <td>
-                                                Gás
-                                            </td>
-                                            <td>Débito automático</td>
-                                            <td>R$1000,00</td>
-                                        </tr>
-                                    
-                                    </tbody>
-                                </div>
-                                
-                                </table>
-                                
-                            </section>
                     </div>
+                    <section class="order-list">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <div class="search-bar">
+                                        <input type="text" class="search-input" placeholder="Procurar por data">
+                                        <input type="text" class="search-input" placeholder="Procurar por tipo">
+                                    </div>
+
+                                    <th>Data de pagamento</th>
+                                    <th>Descrição</th>
+                                    <th>Forma de pagamento</th>
+                                    <th>Quantia</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-label="Data de pagamento">Dia 10</td>
+                                    <td data-label="Descrição">Aluguel</td>
+                                    <td data-label="Forma de pagamento">Transferência bancária</td>
+                                    <td data-label="Quantia">R$2.000,00</td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Data de pagamento">Dia 20</td>
+                                    <td data-label="Descrição">Folha de pagamento de funcionários</td>
+                                    <td data-label="Forma de pagamento">Débito automático</td>
+                                    <td data-label="Quantia">R$4.326,00</td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Data de pagamento">Dia 20</td>
+                                    <td data-label="Descrição">Água</td>
+                                    <td data-label="Forma de pagamento">Débito automático</td>
+                                    <td data-label="Quantia">R$500,00</td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Data de pagamento">Dia 10</td>
+                                    <td data-label="Descrição">Internet</td>
+                                    <td data-label="Forma de pagamento">Débito automático</td>
+                                    <td data-label="Quantia">R$150,00</td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Data de pagamento">Dia 1</td>
+                                    <td data-label="Descrição">Energia</td>
+                                    <td data-label="Forma de pagamento">Débito automático</td>
+                                    <td data-label="Quantia">R$300,00</td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Data de pagamento">Dia 30</td>
+                                    <td data-label="Descrição">Gás</td>
+                                    <td data-label="Forma de pagamento">Débito automático</td>
+                                    <td data-label="Quantia">R$1.000,00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                                <div class="button-container">
+                                    <button class="scroll-button">
+                                        <img src="../imgs/arrow-down-short.svg" alt="">
+                                    </button>
+                                </div>
+                    </section>
+
                 </div>
-            </main>
+
+
         </div>
+    </div>
+    </main>
+    </div>
     </div>
     <script src="../js/bootstrap.bundle.js"></script>
 </body>

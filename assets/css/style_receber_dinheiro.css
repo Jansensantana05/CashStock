@@ -59,7 +59,7 @@ h2 {
 .qrcode {
   width: 225px;
   height: 225px;
-  background: url("/CashStock/assets/imgs/ReceberDinheiro.jpg");
+  background: url("../imgs/ReceberDinheiro.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;

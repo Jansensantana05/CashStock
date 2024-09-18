@@ -1,69 +1,57 @@
-main-content {
-    
-    flex-grow: 1;
-    padding: 20px;
+h2 {
+    margin-left: 12px;
+    margin-bottom: 0;
+    color: #242424;
+
 }
 
-main header {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-main header h1 {
-    margin-left: 20px;
-    font-size: 20px;
-}
-
-main header h2 {
-    margin: 0 0 10px 0;
-    color: #333;
-}
-
-/* barra de pesquisa */
 .search-bar {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    gap: 10px;
 }
 
 .search-bar input {
-    padding: 10px;
-    width: calc(50% - 20px);
+    padding: 10px 20px 10px 40px;
+    font-size: 0.9em;
+    width: 21vh;
+    height: 25px;
     border: 1px solid #ccc;
-    border-radius: 8px;
-    margin: 10px;
+    border-radius: 4px;
+    margin: 12px;
+    background: url(../imgs/icon_search_.svg) no-repeat 10px center;
+    background-size: 20px;
+    background-color: #fff;
 }
 
-
-/* conteúdo */
 .order-list table {
-    
-    width: 100%;
-    border-collapse: collapse;
+    width: 98%;
     background-color: #fff;
     border-radius: 7px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .order-list th,
 .order-list td {
-    
     padding: 15px;
     text-align: left;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #ccc;
+    color: #666666;
+}
+
+[data-label="Total do Pedido"] {
+    font-weight: bold;
 }
 
 .order-list th {
-    
-    background-color: #f9f9f9;
+    background-color: #ffff;
     font-weight: bold;
 }
 
 .order-list td img {
-    
-    width: 50px;
-    height: 50px;
+    width: 4em;
+    height: 65px;
+    border-radius: 10px;
     margin-right: 10px;
     vertical-align: middle;
 }
@@ -80,21 +68,14 @@ main header h2 {
 }
 
 .order-list tbody tr:hover {
-    background-color: #f1f1f1;
-}
-.order-list tbody td img {
-    border-radius: 10px;
+    background-color: #fff;
 }
 
-/* Estilos da section e botão */
 .order-list {
-    border-radius: 15px;
-    margin-right: 20px;
-    margin-left: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* Centraliza horizontalmente */
+
 }
 
 .button-container {
@@ -104,10 +85,10 @@ main header h2 {
 }
 
 .scroll-button {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     border-radius: 20%;
-    background-color: #fff;
+    background-color: #F8EEEF;
     border: none;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     cursor: pointer;
@@ -117,23 +98,32 @@ main header h2 {
     transition: all 0.3s ease;
 }
 
-/* Efeito ao passar o mouse */
 .scroll-button:hover {
-    background-color: #f0f0f0;
+    background-color: #fadcdf;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Efeito ao clicar */
 .scroll-button:active {
     transform: scale(0.95);
+}
+
+.scroll-button img {
+    width: 45px;
+    height: 50px;
 }
 
 .container-fluid {
     width: 100%;
 }
 
-
-
+@media (max-width: 480px) {
+    .search-bar input {
+        padding: 5px 5px 5px 7px;
+        font-size: 0.8em;
+        width: auto;
+        height: 25px;
+    }
+}
 
 @media (min-width: 768px) {
     .container {
@@ -161,47 +151,3 @@ main header h2 {
         width: auto;
     }
 }
-
-@media (max-width: 767px) {
-
-    .order-list table,
-    .order-list thead,
-    .order-list tbody,
-    .order-list th,
-    .order-list td,
-    .order-list tr {
-        display: block;
-        
-    }
-
-    .order-list thead tr {
-        position: absolute;
-        top: -9999px;
-        left: -9999px;
-    }
-
-    .order-list tr {
-        
-        border: 1px solid #ccc;
-        margin-bottom: 10px;
-    }
-
-    .order-list td {
-        border: none;
-        border-bottom: 1px solid #eee;
-        position: relative;
-        padding-left: 50%;
-    }
-
-    .order-list td:before {
-        position: absolute;
-        top: 6px;
-        left: 6px;
-        width: 45%;
-        padding-right: 10px;
-        white-space: nowrap;
-        content: attr(data-label);
-        font-weight: bold;
-    }
-}
-

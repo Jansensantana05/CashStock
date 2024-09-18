@@ -60,18 +60,60 @@ h2 {
     width: 2.5vw;
 }
 
-.butao{
-    width: 8vw;
-    height: 8vmax;
+/* .butao {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+} */
+
+.botao {
+    width: 80px;
+    height: 80px;
+    border-radius: 20%;
+    background-color: #F8EEEF;
     border: none;
-    background-color: #e218253b;
-    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    display: flex;
     align-self: center;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
 }
 
-.butao img{
-    width: 5vw;
-    height: 5vmax;
+.botao:hover {
+    background-color: #fadcdf;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.botao:active {
+    transform: scale(0.95);
+}
+
+.botao img {
+    width: 45px;
+    height: 50px;
+    align-items: center;
+}
+
+.search-bar {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.search-bar input {
+    padding: 10px 20px 10px 40px;
+    font-size: 0.9em;
+    width: 21vh;
+    height: 25px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 12px;
+    background: url(../imgs/icon_search_.svg) no-repeat 10px center;
+    background-size: 20px;
+    background-color: #fff;
 }
 
 @media (max-width: 660px) { 
@@ -98,12 +140,12 @@ h2 {
         width: 7vw;
     }
 
-    .butao{
+    .botao{
         width: 16vw;
         height: 16vmax;  
     }
 
-    .butao img{
+    .botao img{
         width: 10vw;
         height: 10vmax;
     }
